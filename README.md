@@ -12,3 +12,5 @@ to manipulate the web ui from an c# level, and my first real step and commit to 
 From here I needed to try to disect the boot strap page into sections that I could base around models. I sketched out my desgins
 to demonstrate how I could seperate the sections into variables and other models. This gave me a good understanding of the Models 
 relationship in the .Net framework. AQ 7/22/22
+
+![Sketch of models and relationships](sketch_of_models_and_relationships.png)
