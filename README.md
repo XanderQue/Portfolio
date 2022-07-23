@@ -1,12 +1,7 @@
-Portfolio port Case Study
+My Portfolio port Case Study for .Net
 
 To understand more in depth how to program in c# I decided to port my bootstrap JavaScript portfolio, into a .Net Web App project.
-This would give me a very base understanding of where and how .Net does its magic on and with the HTML 
-     /|
-    /*|
- __/_*|__
-_-(*o*)-_  <Science)
-   | |
+This would give me a very base understanding of where and how .Net does its magic on and with the HTML   
 
 I wanted to understand more in depth specifically on how to merge the Hypertext Markup Language with the .Net enviornment. 
 I like to think that I had a good grasp of HTML and Javascript frameworks, as well as C# from programming Unity C# projects. Even then
