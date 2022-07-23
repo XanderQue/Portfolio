@@ -5,9 +5,10 @@
     ViewData["Title"] = "Home page";
 
     String title = "Software Engineer";
-    String subTitle = ".Net Programmer - C# Developer";
-    String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pages", "Azure" };
-    String[] skills_2 = new String[] { "HTML", "CSS", "Javascript", "PHP", "Database" };
+    String subTitle = ".Net Developer - C# Programmer";
+
+    String[] skills_1 = new String[] { "HTML", "CSS", "Javascript", "PHP", "Database" };
+    String[] skills_2 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pages", "Azure" };
     String[] skills_3 = new String[] { "Unity", "Github", "Google APIs", "Android" };
 
     void PurpleStarIconDivider()
@@ -26,6 +27,26 @@
             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
             <div class="divider-custom-line"></div>
         </div>
+    }
+
+    //Sort list of strings by number of characters not 
+    //alphanumerically. Reverse string so we create arrows
+    //pointing downwards. AQ 7/22/22
+
+    String[] skillSort(String[] unsortedStringList)
+    {
+
+
+        if (unsortedStringList != null
+            && unsortedStringList.Length > 1)
+        {
+            unsortedStringList = unsortedStringList
+            .OrderBy(x => x.Length).ToArray();
+
+            unsortedStringList = unsortedStringList.Reverse().ToArray();
+        }
+
+        return unsortedStringList;
     }
 
 }
@@ -59,20 +80,20 @@
         <div class="row justify-content-center">
             <!-- Portfolio Item 1-->
             <div class="text-center col-md-6 col-lg-4 mb-4">
-                @foreach (String skill in skills_1)
+                @foreach (String skill in skillSort(skills_1))
                 {
                     @skill <br />
                 }
             </div>
             <div class="text-center col-md-6 col-lg-4 mb-4">
 
-                @foreach (String skill in skills_2)
+                @foreach (String skill in skillSort(skills_2))
                 {
                     @skill <br />
                 }
             </div>
             <div class="text-center col-md-6 col-lg-4 mb-4">
-                @foreach (String skill in skills_3)
+                @foreach (String skill in skillSort(skills_3))
                 {
                     @skill <br />
                 }
@@ -137,7 +158,7 @@
         }
         <!-- About Section Content-->
         <div>
-            <div class="col-lg-4 m-auto"><p class="lead">My name is Alfred Quezada, I am located in the San Francisco Bay Area. I am a C# developer with experiece in Unity as well as Dot Net Core applications. </p></div>
+            <div class="col-lg-4 m-auto"><p class="lead">My name is Alfred Quezada, I am located in the San Francisco Bay Area. I am a C# programmer with experiece in Unity game development as well as .Net Core applications. </p></div>
         </div>
     </div>
 </section>
@@ -153,7 +174,11 @@
         <!-- Contact Section Form-->
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-7 m-auto">
-                <p class="text-center"><button class="btn btn-primary"><a href="mailto:alfredq11@gmail.com" style="color: white; text-decoration: none;">Alfredq11@gmail.com</a></button></p>
+                <p class="text-center">
+                    <button class="btn btn-primary">
+                        <a href="mailto:alfredq11@gmail.com?subject=We noticed your profile!&body=Hi Alfred,<br/>    We would love to schedule some time to chat!<br/><br/>Hiring Manager" style="color: white; text-decoration: none;">Alfredq11@gmail.com</a>
+                     </button>
+                </p>
             </div>
         </div>
     </div>
