@@ -14,3 +14,4 @@ to demonstrate how I could seperate the sections into variables and other models
 relationship in the .Net framework. AQ 7/22/22
 
 ![Sketch of models and relationships](sketch_of_models_and_relationships.png)
+Figure 1. Sketch of bootstrap portfolio break down.  Alfred Q. 7/22/22
