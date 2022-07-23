@@ -5,14 +5,23 @@
     ViewData["Title"] = "Home page";
 
     String title = "Software Engineer";
-    String subTitle = ".Net Programmer - C# Developer"
-String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pages", "Azure" };
+    String subTitle = ".Net Programmer - C# Developer";
+    String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pages", "Azure" };
     String[] skills_2 = new String[] { "HTML", "CSS", "Javascript", "PHP", "Database" };
     String[] skills_3 = new String[] { "Unity", "Github", "Google APIs", "Android" };
 
-    void WhiteStarDivider()
+    void PurpleStarIconDivider()
     {
         <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+    }
+
+    void WhiteStarIconDivider()
+    {
+        <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
             <div class="divider-custom-line"></div>
@@ -28,7 +37,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
         <!-- Masthead Heading-->
         <h1 class="masthead-heading text-uppercase text-secondary mb-0">Alfred Quezada</h1>
         <!-- Icon Divider-->
-        @WhiteStarDivider();
+        @{
+            PurpleStarIconDivider();
+        }
         <!-- Masthead Subheading-->
         <p class="masthead-subheading font-weight-light mb-0">@title</p>
         <p class="masthead-subheading font-weight-light mb-0">@subTitle</p>
@@ -41,11 +52,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
         <!-- About Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-white">Skills</h2>
         <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
+        @{
+            WhiteStarIconDivider();
+        }
         <!-- Skill Section Content-->
         <div class="row justify-content-center">
             <!-- Portfolio Item 1-->
@@ -76,11 +85,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
         <!-- Portfolio Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
+        @{ 
+            PurpleStarIconDivider();
+        }
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
             <!-- Portfolio Item 1-->
@@ -125,11 +132,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
         <!-- About Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
         <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
+        @{ 
+            WhiteStarIconDivider();
+        }
         <!-- About Section Content-->
         <div>
             <div class="col-lg-4 m-auto"><p class="lead">My name is Alfred Quezada, I am located in the San Francisco Bay Area. I am a C# developer with experiece in Unity as well as Dot Net Core applications. </p></div>
@@ -142,11 +147,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
         <!-- Contact Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
         <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
+        @{ 
+            PurpleStarIconDivider();
+        }
         <!-- Contact Section Form-->
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-7 m-auto">
@@ -169,11 +172,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">In-Development Projects</h2>
                             <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
+                            @{ 
+                                PurpleStarIconDivider(); 
+                            }
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/img/portfolio/TaskTrackerIcon.png" alt="..." />
                             <!-- Portfolio Modal - Text-->
@@ -212,11 +213,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Games Developed</h2>
                             <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
+                            @{ 
+                                PurpleStarIconDivider();
+                            }
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SunsetSessionIcon.png" alt="..." />
                             <!-- Portfolio Modal - Text-->
@@ -251,11 +250,9 @@ String[] skills_1 = new String[] { "C#", "C / C++", ".Net", "Blazor", "Razor Pag
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Research</h2>
                             <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
+                            @{ 
+                                PurpleStarIconDivider();
+                            }
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ResearchTech.png" alt="..." />
                             <!-- Portfolio Modal - Text-->
