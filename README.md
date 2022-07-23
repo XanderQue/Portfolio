@@ -1,4 +1,5 @@
-My Portfolio port Case Study for .Net
+<h2 >My Portfolio port Case Study for .Net</h2>
+<h3>Heroku App : https://alfred-quezada.herokuapp.com/ </h3>
 
 To understand more in depth how to program in c# I decided to port my bootstrap JavaScript portfolio, into a .Net Web App project.
 This would give me a very base understanding of where and how .Net does its magic on and with the HTML   
@@ -14,3 +15,4 @@ to demonstrate how I could seperate the sections into variables and other models
 relationship in the .Net framework. AQ 7/22/22
 
 ![Sketch of models and relationships](sketch_of_models_and_relationships.png)
+Figure 1. Sketch of bootstrap portfolio break down.  Alfred Q. 7/22/22
